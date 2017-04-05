@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>立即炫耀</title>
+<style type="text/css">
+body{
+	margin:0px;
+	padding:0px;
+	}
+
+.xyao{
+	height:100%;
+	width:100%;
+	background:url(images/zan_3.jpg) center center no-repeat;
+	background-size:100% 100%;
+	}
+
+.momo{
+	width:38%;
+	height:20%;
+	position:absolute;
+	right:2%;
+	top:2.5%;
+	background:url(images/mo.png) center center no-repeat;
+	background-size:100% 100%;
+	animation:lbj 1s infinite alternate;
+	}
+.zan{
+	position:absolute;
+	right:20%;
+	bottom:10%;
+	width:55%;
+	height:17%;
+	background:url(images/wom_1.png) center center no-repeat;
+	background-size:100% 100%;
+	}
+.fen{
+	position:absolute;
+	right:10%;
+	top:27%;
+	width:80%;
+	height:15%;
+	background:url(images/luren.png) center center no-repeat;
+	background-size:100% 100%;
+	animation:lbj_2 2s infinite alternate;
+	}
+.xiang{
+	position:absolute;
+	right:25%;
+	bottom:34%;
+	width:50%;
+	height:15%;
+	background:url(images/sai.png) center center no-repeat;
+	background-size:100% 100%;
+	animation:lbj_3 1s infinite alternate;
+	}
+.images{
+	width:100%;
+	height:100%;
+	max-width:100%;
+	}
+
+@keyframes lbj{
+	0%{
+	 transform:rotate(15deg);
+	 transform-origin:0% 50%; 
+	}
+	10%{
+	transform:rotate(0deg);
+	transform-origin:0% 50%;                                                 
+	 }
+	50%{
+	transform:rotate(0deg);
+	transform-origin:0% 50%;                                                 
+	 }
+
+	90%{
+	transform:rotate(0deg);
+	transform-origin:0% 50%;                                                 
+	 }
+
+	100%{
+	transform:rotate(-15deg);
+	transform-origin:0% 50%; 
+	 }	
+	}
+@keyframes lbj_2{
+	0%{
+	 transform:rotate(-6deg)translate(-8px,8px); 
+	}
+	5%{ transform:rotate(0deg)translate(0px,0px); }
+	10%{ transform:rotate(6deg)translate(8px,8px); }
+	15%{ transform:rotate(0deg)translate(0px,0px); }
+	50%{ transform:rotate(0deg)translate(0px,0px); }
+	85%{ transform:rotate(0deg)translate(0px,0px); }
+	90%{ transform:rotate(6deg)translate(8px,8px); }
+	95%{ transform:rotate(0deg)translate(0px,0px); }
+	100%{
+	  transform:rotate(-6deg)translate(-8px,-8px); 
+	 }
+	}
+@keyframes lbj_3{
+	0%{
+	 transform:scale(1,1); 
+	 opacity:1;
+	}
+	20%{ transform:scale(1.1,1.1); opacity:0.8; }
+	40%{ transform:scale(1.2,1.2); opacity:0.6; }
+	60%{ transform:scale(1.3,1.3); opacity:0.4; }
+	80%{ transform:scale(1.4,1.4); opacity:0.2; }
+	100%{
+	  transform:scale(1.5,1.5); 
+	  opacity:0;
+	 }
+	}
+
+</style>
+</head>
+
+<body>
+<div class="xyao">
+<div class="momo"></div>
+<div class="fen"></div>
+<div class="xiang"></div>
+<div class="zan"></div>
+
+</div>
+
+<script>
+document.getElementsByTagName('div')[0].style.height=screen.height+"px";
+/*<!--setTimeout(function(){    window.location.reload();}, 1000);-->*/
+</script>
+
+
+</body>
+</html>
